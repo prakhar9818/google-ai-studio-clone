@@ -29,10 +29,9 @@ export default function MainLayout() {
   ];
   return (
     <div className="h-screen w-screen flex flex-col">
-      {/* 🔝 Top Bar */}
       <div className="h-73px grey-bg flex items-center justify-between px-4">
         <div className="text-sm flex items-center gap-1">
-          <img src="src\assets\google.svg" alt="" />{" "}
+          <img src="src\assets\google.svg" alt="" />
           <span className="fs-22px">AI Studio</span>
         </div>
         <div className="flex gap-2">
@@ -69,7 +68,6 @@ export default function MainLayout() {
       </div>
 
       <div className="flex flex-1">
-        {/* 📚 Left Sidebar */}
         <div className="w-219px grey-bg px-4 pb-4 pt-24px flex flex-col gap-2">
           {sidebarItems.map((item) => {
             const isActive = location.pathname === item.route;
@@ -92,28 +90,24 @@ export default function MainLayout() {
               </button>
             );
           })}
+          <div className="flex justify-center mt-3">
+            <button
+              onClick={() => navigate("addToDrive")}
+              className={`hover:bg-[#ebeef9] text-left py-1 px-15px rounded flex items-center gap-2 border-1 border-radius-20px`}
+            >
+              <img
+                src="src\assets\addtodrive.png"
+                alt="add to drive icon"
+                className="h-5 w-5"
+              />
+              Enable saving
+            </button>
+          </div>
         </div>
 
-        {/* 🧠 Main Content Area */}
         <div className="flex-1 bg-white overflow-y-auto">
           <Outlet />
         </div>
-
-        {/* 📎 Right Sidebar */}
-        {/* <div className="w-60 bg-gray-100 p-4 flex flex-col gap-2">
-          <button
-            onClick={() => alert("Help")}
-            className="px-2 py-1 hover:bg-gray-200 rounded"
-          >
-            Help
-          </button>
-          <button
-            onClick={() => alert("Shortcuts")}
-            className="px-2 py-1 hover:bg-gray-200 rounded"
-          >
-            Shortcuts
-          </button>
-        </div> */}
       </div>
     </div>
   );
