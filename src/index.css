@@ -1,0 +1,35 @@
+.grey-bg {
+  background-color: #f7f9fd;
+}
+
+.dark-grey-bg {
+  background-color: #ebeef9;
+}
+
+.border-radius-20px {
+  border-radius: 20px !important;
+}
+
+.border-1 {
+  border: 2px #f7f9fd solid;
+}
+
+.h-16px {
+  height: 16px;
+}
+
+.w-16px {
+  width: 16px;
+}
+
+.h-20px {
+  height: 20px;
+}
+
+.w-20px {
+  width: 20px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
