@@ -37,8 +37,13 @@ export default function MainLayout() {
         <div className="flex gap-2">
           <button
             onClick={() => alert("New Project")}
-            className="px-3 py-1 rounded"
+            className="px-3 py-1 rounded flex items-center gap-2 dark-grey-bg border-1 border-radius-20px"
           >
+            <img
+              src="https://img.icons8.com/?size=100&id=82753&format=png&color=000000"
+              alt="key icon"
+              className="h-5 w-5"
+            />
             Get API key
           </button>
           <button
