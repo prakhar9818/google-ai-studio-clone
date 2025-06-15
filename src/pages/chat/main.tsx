@@ -34,7 +34,7 @@ const iconButtons = [
 export default function ChatMain() {
   return (
     <div>
-      <div className="flex justify-between mb-2">
+      <div className="flex justify-between">
         <span className="p-3">Chat Prompt</span>
         <div className="flex">
           {iconButtons.map((icon, index) => (
