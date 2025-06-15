@@ -5,11 +5,9 @@ export default function RightSidePanel() {
   const navigate = useNavigate();
   return (
     <div className="flex h-full grey-bg ">
-      {/* Left side of B (dynamic component) */}
       <div className="flex-1 p-4 bg-white border-1 border-radius-20px">
         <Outlet />
       </div>
-      {/* Navigation bar on right */}
       <div className="p-2 flex flex-col gap-2 grey-bg border-1">
         <button
           className="hover:bg-[#ebeef9] text-sm border-radius-50percentage p-3"

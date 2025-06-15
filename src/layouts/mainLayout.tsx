@@ -10,16 +10,20 @@ export default function MainLayout() {
       route: "/chat",
       icon: "https://img.icons8.com/?size=100&id=DfkwPIGI2t63&format=png&color=000000",
     },
-    { label: "Stream", route: "/stream", icon: "src\\assets\\echo.png" },
+    {
+      label: "Stream",
+      route: "/stream",
+      icon: "https://ik.imagekit.io/tgva/echo.png?updatedAt=1749983135303",
+    },
     {
       label: "Generate Media",
       route: "/generateMedia",
-      icon: "src\\assets\\chatwithimage.svg",
+      icon: "https://ik.imagekit.io/tgva/chatwithimage.png?updatedAt=1749983134665",
     },
     {
       label: "Build",
       route: "/build",
-      icon: "src\\assets\\puzzle.png",
+      icon: "https://ik.imagekit.io/tgva/puzzle.png?updatedAt=1749983134552",
     },
     {
       label: "History",
@@ -31,7 +35,10 @@ export default function MainLayout() {
     <div className="h-screen w-screen flex flex-col">
       <div className="h-73px grey-bg flex items-center justify-between px-4">
         <div className="text-sm flex items-center gap-1">
-          <img src="src\assets\google.svg" alt="" />
+          <img
+            src="https://ik.imagekit.io/tgva/google.svg?updatedAt=1749983134218"
+            alt=""
+          />
           <span className="fs-22px">AI Studio</span>
         </div>
         <div className="flex gap-2">
@@ -78,7 +85,7 @@ export default function MainLayout() {
           </button>
           <button className="p-1 rounded flex items-center hover:bg-[#ebeef9] border-radius-50percentage">
             <img
-              src="src\\assets\\prakhar.jpg"
+              src="https://ik.imagekit.io/tgva/prakhar.jpg?updatedAt=1749983135031"
               alt="prakhar's profile"
               className="h-36px w-36px border-radius-50percentage"
             />
@@ -115,7 +122,7 @@ export default function MainLayout() {
               className={`hover:bg-[#ebeef9] text-left py-1 px-15px rounded flex items-center gap-2 border-1 border-radius-20px`}
             >
               <img
-                src="src\assets\addtodrive.png"
+                src="https://ik.imagekit.io/tgva/addtodrive.png?updatedAt=1749983134064"
                 alt="add to drive icon"
                 className="h-5 w-5"
               />
