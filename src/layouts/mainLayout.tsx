@@ -31,6 +31,7 @@ export default function MainLayout() {
       icon: "https://img.icons8.com/?size=100&id=86136&format=png&color=000000",
     },
   ];
+
   return (
     <div className="h-screen w-screen flex flex-col">
       <div className="h-73px grey-bg flex items-center justify-between px-4">
@@ -96,7 +97,7 @@ export default function MainLayout() {
       <div className="flex flex-1">
         <div className="w-219px grey-bg px-4 pb-4 pt-24px flex flex-col gap-2">
           {sidebarItems.map((item) => {
-            const isActive = location.pathname === item.route;
+            const isActive = location.pathname.includes(item.route);
             return (
               <button
                 key={item.route}

@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import MainLayout from "../layouts/mainLayout";
 import Stream from "../pages/stream";
 import Build from "../pages/build";
@@ -12,8 +12,9 @@ import PromptGallery from "../pages/chat/promptGallery";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout />, // layout
+    element: <MainLayout />,
     children: [
+      { index: true, element: <Navigate to="/chat/runSettings" replace /> },
       { path: "stream", element: <Stream /> },
       { path: "generateMedia", element: <GenerateMedia /> },
       { path: "build", element: <Build /> },
@@ -23,8 +24,12 @@ const router = createBrowserRouter([
         element: <ChatLayout />,
         children: [
           {
+            index: true,
+            element: <Navigate to="runSettings" replace />,
+          },
+          {
             path: "",
-            element: <RightSidePanel />, // Needed only if nesting deeper
+            element: <RightSidePanel />,
             children: [
               { path: "runSettings", element: <RunSettings /> },
               { path: "promptGallery", element: <PromptGallery /> },
