@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./main.scss";
 
 const iconButtons = [
