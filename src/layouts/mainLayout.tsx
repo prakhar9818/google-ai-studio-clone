@@ -80,7 +80,7 @@ export default function MainLayout() {
             <img
               src="https://img.icons8.com/?size=100&id=364&format=png&color=000000"
               alt="settings icon"
-              className="h-16px w-16px"
+              className="h-16px w-16px m-5px"
             />
           </button>
           <button className="p-1 rounded flex items-center hover:bg-[#ebeef9] border-radius-50percentage">
