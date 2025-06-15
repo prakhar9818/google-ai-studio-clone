@@ -1,5 +1,6 @@
 import ChatMain from "./main";
 import { Outlet } from "react-router-dom";
+import "./layout.scss";
 
 export default function ChatLayout() {
   return (
@@ -10,7 +11,7 @@ export default function ChatLayout() {
       </div>
 
       {/* Component B - Right Side Panel */}
-      <div className="w-96 grey-bg">
+      <div className="w-300px grey-bg">
         <Outlet />
       </div>
     </div>

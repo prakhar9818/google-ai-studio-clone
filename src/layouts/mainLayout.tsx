@@ -48,25 +48,39 @@ export default function MainLayout() {
           </button>
           <button
             onClick={() => alert("New Project")}
-            className="px-3 py-1 rounded"
+            className="px-1 py-1 rounded"
           >
-            Studio
+            <b>Studio</b>
           </button>
           <button
             onClick={() => alert("Settings")}
-            className="px-3 py-1 rounded"
+            className="px-1 py-1 rounded"
           >
             Dashboard
           </button>
           <button
             onClick={() => alert("Settings")}
-            className="px-3 py-1 rounded flex items-center gap-1"
+            className="px-1 py-1 rounded flex items-center gap-1"
           >
             Documentation
             <img
               src="https://img.icons8.com/?size=100&id=83168&format=png&color=000000"
               alt="open link"
               className="h-16px w-16px"
+            />
+          </button>
+          <button className="px-2 py-1 rounded flex items-center hover:bg-[#ebeef9] border-radius-50percentage">
+            <img
+              src="https://img.icons8.com/?size=100&id=364&format=png&color=000000"
+              alt="settings icon"
+              className="h-16px w-16px"
+            />
+          </button>
+          <button className="p-1 rounded flex items-center hover:bg-[#ebeef9] border-radius-50percentage">
+            <img
+              src="src\\assets\\prakhar.jpg"
+              alt="prakhar's profile"
+              className="h-36px w-36px border-radius-50percentage"
             />
           </button>
         </div>
